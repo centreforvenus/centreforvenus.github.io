@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Center OF Venus</title>
+
+    <!-- Bootstrap -->
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="css/bootstrap.css"/>
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://db.onlinewebfonts.com/c/482de819aa9631d27141f3d998cace18?family=Ethnocentric" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      @media (min-width: 320px) and (max-width:520px) {
+	  .mt-5{
+	  margin-top:1rem !important;
+	  
+	  }
+	  
+	  .mt-3{
+	  margin-top:1.5rem !important;
+	  
+	  }
+	  
+	  .w-25{
+	  
+	  width:50% !important;
+    }
+    
+  }
+
+
+      .sidebar-contact{
+  position:fixed;
+  top:60%;
+  left:-350px;
+  transform:translateY(-50%);
+  width:350px;
+  height:auto;
+  padding:40px;
+  background:#fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+  box-sizing:border-box;
+  transition:0.5s;
+  z-index: 999;
+}
+.sidebar-contact.active{
+  left:0;
+}
+
+.sidebar-contact h2{
+  margin:0 0 20px;
+  padding:0;
+}
+
+
+.toggle{
+  position:absolute;
+  height:48px;
+  width:48px;
+  text-align:center;
+  cursor:pointer;
+  background:#ec1d25;
+  top:0;
+  right:-48px;
+  line-height:48px;
+}
+.toggle:before{
+  content:'\f003';
+  font-family:fontAwesome;
+  font-size:18px;
+  color:#fff;
+  margin-left: -5px;
+}
+.toggle.active:before{
+  content:'\f00d';
+}
+@media(max-width:768px)
+{
+  .sidebar-contact{
+    width:100%;
+    height:100%;
+    left:-100%;
+  }
+  .sidebar-contact .toggle{
+    top:50%;
+    transform:translateY(-50%);
+    transition:0.5s;
+  }
+  .sidebar-contact.active .toggle
+  {
+    top:0;
+    right:0;
+    transform:translateY(0);
+  }
+  .scroll{
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+  }
+  .content{
+    padding:50px 50px;
+  }
+}
+
+      
+    </style>
+  </head>
+  <body>
+    <header class="masthead-gate">
+      <div class="container-fluid h-100 ">
+        <div class="row">
+          <div class="col-md-6 col-12 mt-4">
+            <div class="row">
+              <div class="col-12 mb-2">
+                <div class="row">
+                  <div class="col-3 mt-5">
+                    <img src="images/last/uceed.png" class="img-fluid"/>
+                  </div>
+
+                  <div class="col-3">
+                      <img src="images/last/nid.svg" class="img-fluid"/>
+                    </div>
+					
+					 <div class="col-3">
+                      <img src="images/last/nift-new.png" class="img-fluid"/>
+                    </div>
+                </div>
+				
+              </div>
+			  
+			  <div class="col-12 mt-2">
+			  <div class="bg-sir">
+				<p class="new-direc p-0 text-white">Centre for VENUS commenced Coaching and Training for various B.Des Programs in the year 2018. The Centre developed and delivered training for various B.Des Entrance Exams, i.e. UCEED, NID, NIFT by developing core design development skills in all our enrolled students.  </p>
+				<p class="new-direc p-0 text-white">Our Program will foster design thinking and aptitude for creative approaches to problem solving.  We use and deploy learning methods aimed at harnessing the most able of talent in students aiming to pursue design as a career.</p>
+				
+						<p class="new-direc p-0 text-white font-weight-600">We believe: GOOD DESIGN IS SUSTAINABLE BUT GREAT DESIGN IS RESPONSIBLE</p>
+			  </div>
+              </div>
+			  
+			  
+              <div class="col-12 mt-3">
+                <h1 class="publications color-new text-left mt-0 font-21 mb-3">Batches</h1>
+                <h4 class="batch">Batch A - Odd days 5 pm to 7 pm </h4>
+                <h4 class="batch">Batch B - Even days 5 pm to 7 pm </h4>
+              </div>
+
+              <div class="col-12 mt-2">
+                <h1 class="publications color-new text-left mt-0 font-21 mb-3">Reading Material</h1>
+                <div class="row">
+                  <div class="col-4 col-lg-3 col-md-3 text-center">
+                      <img src="images/last/uceed-1.jpg" class="img-fluid img-thumbnail box-shadow w-90" data-toggle="modal" data-target="#exampleModalCenter">
+
+                  </div>
+                  <div class="col-4 col-lg-3 col-md-3 text-center">
+                      <img src="images/last/uceed-2.jpg" class="img-fluid img-thumbnail box-shadow w-90" data-toggle="modal" data-target="#exampleModalCenter-new">
+
+                  </div>
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+            <div class="col-12 col-md-6 mt-4">
+              <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          VENUS Batch 2019
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="row">
+                            <!-- <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/bindu.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Bindhu Bharghavi</h3>
+                                            <h6 class="text-center">AIR : <span class="text-danger font-21 font-weight-600 mt-3">319</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/raghavendra.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Raghave<br/>ndra</h3>
+                                            <h6 class="text-center">AIR : <span class="text-danger font-21 font-weight-600 mt-3">454</span></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/prameela.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Back</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/sindhu.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Sindhu Ch</h3>
+                                            <h6 class="text-center">AIR : <span class="text-danger font-21 font-weight-600 mt-3">83</span></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/swapnika.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white p-0">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Swapnika Vadali</h3>
+                                            <h6 class="text-center">AIR : <span class="text-danger font-21 font-weight-600 mt-3">1005</span></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             -->
+
+                            <!-- <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/kt-lavanya.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">KT Lavanya Vaishnavi</h3>
+                                            <h6 class="text-center">AIR : <span class="text-danger font-21 font-weight-600 mt-3">101</span></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/aparna.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Aparna Dasari</h3>
+                                            <h6 class="text-center">AIR : <span class="text-danger font-21 font-weight-600 mt-3">346</span></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/manisha.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Manisha Rampally</h3>
+                                            <h6 class="text-center">AIR : <span class="text-danger font-21 font-weight-600 mt-3">246</span></h6>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+							
+							  <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/khushi-janwar.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white align-items-center">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Khushi Zanwar</h3>
+											<h6 class="text-center">UCEED AIR : <span class="text-danger font-21 font-weight-600 mt-3">32</span></h6>
+                                            <h6 class="text-center">NID DAT AIR : <span class="text-danger font-21 font-weight-600 mt-3">296</span></h6>
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>							
+							
+
+                            <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/abhishai.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white align-items-center">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Abishai Choragudi</h3>     
+											<h6 class="text-center">UCEED AIR : <span class="text-danger font-21 font-weight-600 mt-3">161</span></h6>											
+                                            <h6 class="text-center">NID DAT AIR : <span class="text-danger font-21 font-weight-600 mt-3">147</span></h6>
+                                           
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							
+							 <div class="col-4 col-md-3 mb-2">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/photos/varun.jpg" class="img-fluid box-shadow"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white align-items-center">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Varun Sai Koruprolu</h3>
+                                            <h6 class="text-center">NID DAT AIR : <span class="text-danger font-21 font-weight-600 mt-3">05</span></h6>
+											<span class="text-center">(Overseas Category)</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                          
+
+                           
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
+                  
+                </div>
+				
+				
+				
+          </div>
+		   <div class="col ml-auto">
+	 
+	 </div>
+	 <div class="col">					
+              <a href="index.html"><img src="images/logo.png" class="img-fluid w-25 mt-5 float-right"/></a>
+					</div>
+		   <div class="notification-border w-100 animated fadeInUp delay-1s">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 notification-heading pt-pb text-center">
+              <span class="notification-heading pt-pb text-uppercase text-center">Coaching For Bachelor's & master's program design program</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </header>
+    
+    
+              <div  class="scrollTop">
+                  <span><a href=""><i class="fa fa-arrow-up text-white"></i></a></span>
+                </div>
+
+                <div class="sidebar-contact">
+                    <div class="toggle"></div>
+                    <h2 class="contact">Contact Us</h2>
+                    <div class="scroll">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Name</label>
+                        <input type="text" name="" placeholder="Name" class="form-control">
+                      </div>
+
+                      <div class="form-group">
+                          <label class="control-label">Email</label>
+                          <input type="email" name="" placeholder="Email" class="form-control">
+                      </div>
+
+                      <div class="form-group">
+                          <label class="control-label">Phone Number</label>                             
+                          <input type="rel" name="" placeholder="Phone Number" class="form-control">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label">Message</label>
+                          <textarea placeholder="Message here.." class="form-control"></textarea>
+                      </div>
+                      
+                      <input type="submit" name="" value="Send" class="btn btn-new">
+                    </form>
+                    </div>
+                  </div>
+
+                  <div class="sticky-container">
+                    <ul class="sticky">
+                        <li>
+                            <img src="images/social-media-icons/facebook-circle.png" width="32" height="32">
+                            <p><a href="https://www.facebook.com/codexworld" target="_blank">Like Us on<br>Facebook</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/twitter-circle.png" width="32" height="32">
+                            <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/gplus-circle.png" width="32" height="32">
+                            <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Google+</a></p>
+                        </li>
+                        <!-- <li>
+                            <img src="images/social-media-icons/linkedin-circle.png" width="32" height="32">
+                            <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/youtube-circle.png" width="32" height="32">
+                            <p><a href="http://www.youtube.com/codexworld" target="_blank">Subscribe on<br>YouYube</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/pin-circle.png" width="32" height="32">
+                            <p><a href="https://www.pinterest.com/codexworld" target="_blank">Follow Us on<br>Pinterest</a></p>
+                        </li> -->
+                    </ul>
+                </div>
+
+            <!-- Button trigger modal -->
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+
+    
+<script>
+$(document).ready(function(){
+  $('.toggle').click(function(){
+    $('.sidebar-contact').toggleClass('active')
+    $('.toggle').toggleClass('active')
+  })
+})
+
+</script>
+<script>
+    AOS.init({
+  duration: 1200,
+})
+  </script>
+
+   <script>
+   // BY KAREN GRIGORYAN
+
+$(document).ready(function() {
+  /******************************
+      BOTTOM SCROLL TOP BUTTON
+   ******************************/
+
+  // declare variable
+  var scrollTop = $(".scrollTop");
+
+  $(window).scroll(function() {
+    // declare variable
+    var topPos = $(this).scrollTop();
+
+    // if user scrolls down - show scroll to top button
+    if (topPos > 100) {
+      $(scrollTop).css("opacity", "1");
+
+    } else {
+      $(scrollTop).css("opacity", "0");
+    }
+
+  }); // scroll END
+
+  //Click event to scroll to top
+  $(scrollTop).click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+
+  }); 
+
+}); // ready() END
+   </script>
+
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top 
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+
+  
+  </script>
+
+  <script>
+  var flkty = new Flickity( '.main-gallery', {
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: true,
+  prevNextButtons: false,
+  autoPlay: 5000
+});
+  </script>
+   
+  
+</html>

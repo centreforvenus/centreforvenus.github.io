@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Center OF Venus</title>
+
+    <!-- Bootstrap -->
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="css/bootstrap.css"/>
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://db.onlinewebfonts.com/c/482de819aa9631d27141f3d998cace18?family=Ethnocentric" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+
+      h6.font-11{
+        font-size: 11px;
+      }
+      @media (min-width: 320px) and (max-width:520px) {
+	  .mt-5{
+	  margin-top:1rem !important;
+	  
+	  }
+	  
+	  .mt-3{
+	  margin-top:1.5rem !important;
+	  
+	  }
+	  
+	  .w-25{
+	  
+	  width:50% !important;
+    }
+    
+  }
+
+
+      .sidebar-contact{
+  position:fixed;
+  top:60%;
+  left:-350px;
+  transform:translateY(-50%);
+  width:350px;
+  height:auto;
+  padding:40px;
+  background:#fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+  box-sizing:border-box;
+  transition:0.5s;
+  z-index: 999;
+}
+.sidebar-contact.active{
+  left:0;
+}
+
+.sidebar-contact h2{
+  margin:0 0 20px;
+  padding:0;
+}
+
+
+.toggle{
+  position:absolute;
+  height:48px;
+  width:48px;
+  text-align:center;
+  cursor:pointer;
+  background:#ec1d25;
+  top:0;
+  right:-48px;
+  line-height:48px;
+}
+.toggle:before{
+  content:'\f003';
+  font-family:fontAwesome;
+  font-size:18px;
+  color:#fff;
+  margin-left: -5px;
+}
+.toggle.active:before{
+  content:'\f00d';
+}
+@media(max-width:768px)
+{
+  .sidebar-contact{
+    width:100%;
+    height:100%;
+    left:-100%;
+  }
+  .sidebar-contact .toggle{
+    top:50%;
+    transform:translateY(-50%);
+    transition:0.5s;
+  }
+  .sidebar-contact.active .toggle
+  {
+    top:0;
+    right:0;
+    transform:translateY(0);
+  }
+  .scroll{
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+  }
+  .content{
+    padding:50px 50px;
+  }
+}
+
+      
+    </style>
+  </head>
+  <body>
+    <header class="masthead-gate">
+      <div class="container-fluid">
+        <div class="row">
+			   <div class="col-1 ">
+	 
+	 </div>
+          <div class="col-lg-7 offset-lg-1 col-md-6 mt-4">
+		 <h2 class="contact text-center mb-5">Our Team</h2>
+             <div class="row">				
+							  <div class="col-xs-6 col-lg-3 col-md-3 mb-2 col-6">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/our-team/vasanta.jpg" class="img-thumbnail box-shadow grayscale"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white align-items-center">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Ar.Vasanta Sobha Turaga</h3>
+											<h6 class="text-center font-11">M.Arch AITP AIIA (Ph. D)<span class="font-21 font-weight-600 mt-3"></span></h6>
+                                            <h6 class="text-center font-11">CONSERVATION ARCHITECT </h6>
+											<h6 class="text-center font-11">URBAN <span class=" font-weight-600 mt-3">REGIONAL PLANNER</span></h6>
+
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>	
+							
+							 <!-- <div class="col-xs-6 col-lg-3 col-md-3 mb-2 col-6">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/our-team/kishore.jpg" class="img-thumbnail box-shadow grayscale"/>
+                                        </div>
+                                    </div>
+                                     <div class="card-back bg-white align-items-center">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Kishore Gudepu</h3>
+											<h6 class="text-center">Graduation in Civil Engineering</h6>
+                                            <h6 class="text-center font-18 text-danger">RAJIV GANDHI UNIVERSITY OF KNOWLEDGE AND TECHNOLOGY</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>	 -->
+							
+							
+							
+							 <div class="col-xs-6 col-lg-3 col-md-3 mb-2 col-6">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/our-team/krishna.jpg" class="img-thumbnail box-shadow grayscale"/>
+                                        </div>
+                                    </div>
+                                    <div class="card-back bg-white align-items-center">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Krishna Damurothu</h3>
+											<h6 class="text-center font-11">B.Tech Mechanical engineering dept at <span class=" font-weight-600 mt-3">IIIT RK VALLEY</span></h6>
+                                            <h6 class="text-center font-11">M.Tech in Automobile at NIT Warangal</h6>
+ </div>
+                                    </div>
+                                </div>
+                            </div>	
+							
+							
+							 <div class="col-xs-6 col-lg-3 col-md-3 mb-2 col-6">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/our-team/gouri.jpg" class="img-thumbnail box-shadow grayscale"/>
+                                        </div>
+                                    </div>
+                                     <div class="card-back bg-white align-items-center">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title font-11">Gouri M Kasinathuni</h3>
+											<h6 class="text-center  font-11">Architect</h6>
+                                           
+                                            
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>	
+							
+							 <div class="col-xs-6 col-lg-3 col-md-3 mb-2 col-6">
+                                <div class="card card-flip">
+                                    <div class="card-front text-white">
+                                        <div class="card-body p-0">
+                                       <img src="images/our-team/roopa.jpg" class="img-thumbnail box-shadow grayscale"/>
+                                        </div>
+                                    </div>
+                                     <div class="card-back bg-white align-items-center">
+                                        <div class="card-body p-2">
+                                            <h3 class="card-title">Sagiraju Roopa</h3>
+											<h6 class="text-center font-11">B.Tech civil engineering dept at <span class="font-18 font-weight-600 mt-3">IIIT RK VALLEY</span></h6>
+                                            <h6 class="text-center font-11">M.Tech in Geotechnical engineering  at NIT Warangal</h6>
+ </div>
+                                    </div>
+                                </div>
+                            </div>	
+							
+			 </div>
+				
+          </div>
+		  <div class="col-1">
+		  
+		  </div>
+	
+	 <div class="col-12">					
+              <a href="index.html"><img src="images/logo.png" class="img-fluid w-25 mt-5 float-right"/></a>
+					</div>
+		   <div class="notification-border w-100 animated fadeInUp delay-1s">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 notification-heading pt-pb text-center">
+              <span class="notification-heading pt-pb text-uppercase text-center">Coaching For Bachelor's & master's program design program</span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </header>
+    
+    
+              <div  class="scrollTop">
+                  <span><a href=""><i class="fa fa-arrow-up text-white"></i></a></span>
+                </div>
+
+                <div class="sidebar-contact">
+                    <div class="toggle"></div>
+                    <h2 class="contact">Contact Us</h2>
+                    <div class="scroll">
+                    <form>
+                      <div class="form-group">
+                        <label class="control-label">Name</label>
+                        <input type="text" name="" placeholder="Name" class="form-control">
+                      </div>
+
+                      <div class="form-group">
+                          <label class="control-label">Email</label>
+                          <input type="email" name="" placeholder="Email" class="form-control">
+                      </div>
+
+                      <div class="form-group">
+                          <label class="control-label">Phone Number</label>                             
+                          <input type="rel" name="" placeholder="Phone Number" class="form-control">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label">Message</label>
+                          <textarea placeholder="Message here.." class="form-control"></textarea>
+                      </div>
+                      
+                      <input type="submit" name="" value="Send" class="btn btn-new">
+                    </form>
+                    </div>
+                  </div>
+
+                  <div class="sticky-container">
+                    <ul class="sticky">
+                        <li>
+                            <img src="images/social-media-icons/facebook-circle.png" width="32" height="32">
+                            <p><a href="https://www.facebook.com/codexworld" target="_blank">Like Us on<br>Facebook</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/twitter-circle.png" width="32" height="32">
+                            <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/gplus-circle.png" width="32" height="32">
+                            <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Google+</a></p>
+                        </li>
+                        <!-- <li>
+                            <img src="images/social-media-icons/linkedin-circle.png" width="32" height="32">
+                            <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/youtube-circle.png" width="32" height="32">
+                            <p><a href="http://www.youtube.com/codexworld" target="_blank">Subscribe on<br>YouYube</a></p>
+                        </li>
+                        <li>
+                            <img src="images/social-media-icons/pin-circle.png" width="32" height="32">
+                            <p><a href="https://www.pinterest.com/codexworld" target="_blank">Follow Us on<br>Pinterest</a></p>
+                        </li> -->
+                    </ul>
+                </div>
+
+            <!-- Button trigger modal -->
+
+
+
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+
+    
+<script>
+$(document).ready(function(){
+  $('.toggle').click(function(){
+    $('.sidebar-contact').toggleClass('active')
+    $('.toggle').toggleClass('active')
+  })
+})
+
+</script>
+<script>
+    AOS.init({
+  duration: 1200,
+})
+  </script>
+
+   <script>
+   // BY KAREN GRIGORYAN
+
+$(document).ready(function() {
+  /******************************
+      BOTTOM SCROLL TOP BUTTON
+   ******************************/
+
+  // declare variable
+  var scrollTop = $(".scrollTop");
+
+  $(window).scroll(function() {
+    // declare variable
+    var topPos = $(this).scrollTop();
+
+    // if user scrolls down - show scroll to top button
+    if (topPos > 100) {
+      $(scrollTop).css("opacity", "1");
+
+    } else {
+      $(scrollTop).css("opacity", "0");
+    }
+
+  }); // scroll END
+
+  //Click event to scroll to top
+  $(scrollTop).click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+
+  }); 
+
+}); // ready() END
+   </script>
+
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top 
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+
+  
+  </script>
+
+  <script>
+  var flkty = new Flickity( '.main-gallery', {
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: true,
+  prevNextButtons: false,
+  autoPlay: 5000
+});
+  </script>
+   
+  
+</html>
